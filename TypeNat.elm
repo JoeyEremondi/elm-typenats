@@ -9,7 +9,7 @@ that is, there are no values of type `Zero` or `OnePlus a`.
 Instead, they should be arguments to other type constructors.
 
 Elm doesn't have DataKinds, so please don't do anything silly like
-`OnePlus (OnePlus (One Plus (List (Int, Int))))`
+`OnePlus (OnePlus (OnePlus (List (Int, Int))))`
 i.e. please only give another TypeNat as the argument to
 OnePlus.
 
@@ -18,10 +18,10 @@ OnePlus.
 -}
 
 
-{-| A phantom type for 0, our base TypeNat -}
+{-| A phantom type for 0, our base TypeNat. -}
 type Zero = Zero Zero
 
 
 {-|A phantom type constructor to increment a TypeNat,
-creating a larger TypeNat -}
+creating a larger TypeNat. -}
 type OnePlus a = OnePlus OnePlus
