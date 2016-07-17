@@ -1,6 +1,6 @@
-module TypeNat
+module TypeNat exposing
     ( Zero, OnePlus
-    ) where
+    )
 
 {-|
 Easy to remember names for type-level natural numbers.
